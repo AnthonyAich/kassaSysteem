@@ -1,0 +1,356 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap");
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0px;
+  margin: 0px;
+  font-family: "Poppins";
+  text-decoration: none;
+}
+
+html {
+  max-width: 400px;
+}
+
+body {
+  max-height: 712px;
+}
+
+a {
+  color: #000;
+}
+
+.bovensteNav {
+  padding: 0px 10px;
+  height: 50px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-shadow: 0px 0px 40px #3b3b3b;
+          box-shadow: 0px 0px 40px #3b3b3b;
+  border-radius: 0px 0px 5px 5px;
+}
+
+.bovensteNav h1 {
+  font-size: 20px;
+  line-height: 50px;
+}
+
+.bovensteNav .navUtilities {
+  width: 25%;
+  font-size: 23px;
+  height: 50px;
+  line-height: 50px;
+  vertical-align: middle;
+}
+
+.bovensteNav .navUtilities .fa-search {
+  margin-right: 25px;
+}
+
+.bovensteNav .navUtilities i {
+  cursor: pointer;
+}
+
+main {
+  margin: 2%;
+}
+
+main .ADbanner {
+  background-image: url(../images/4adBanner.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  margin-top: 2vh;
+  border-radius: 9px;
+  -webkit-filter: contrast(110%);
+          filter: contrast(110%);
+  height: 19vh;
+}
+
+main section {
+  margin-top: 10px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  gap: 2vw;
+}
+
+main section article {
+  text-align: center;
+  line-height: 15vh;
+  color: #fff;
+  height: 15vh;
+  background-color: #303030;
+  border-radius: 9px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  -webkit-filter: contrast(110%);
+          filter: contrast(110%);
+  font-size: 20px;
+  text-shadow: 0px 0px 20px #000;
+  text-transform: uppercase;
+}
+
+main section article:first-of-type {
+  background-image: url(../images/soft.jpg);
+}
+
+main section article:nth-of-type(2) {
+  background-image: url(../images/bierBar.jpg);
+}
+
+main section article:nth-of-type(3) {
+  background-image: url(../images/wine.jpg);
+}
+
+main section article:nth-of-type(4) {
+  background-image: url(../images/sterkeDrank.jpeg);
+}
+
+main section article:nth-of-type(5) {
+  background-image: url(../images/snack.jpg);
+}
+
+main section article:nth-of-type(6) {
+  background-image: url(../images/koffie.jpg);
+}
+
+.ondersteNav {
+  z-index: 20;
+  position: fixed;
+  bottom: 0px;
+  padding: 0px 10px;
+  height: 50px;
+  width: 100%;
+  max-width: 400px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-shadow: 0px 5px 40px #3b3b3b;
+          box-shadow: 0px 5px 40px #3b3b3b;
+  border-radius: 5px 5px 0px 0px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.ondersteNav .winkelKar {
+  background-color: #0094ff;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  color: white;
+  text-align: center;
+  margin-top: -20px;
+  font-size: 22px;
+  line-height: 10px;
+}
+
+.ondersteNav .winkelKar i {
+  margin-top: 15px;
+  margin-bottom: 5px;
+}
+
+.ondersteNav .winkelKar p {
+  font-size: 10px;
+}
+
+.ondersteNav .home,
+.ondersteNav .profiel {
+  font-size: 20px;
+  line-height: 15px;
+  color: #303030;
+  width: 30%;
+  text-align: center;
+}
+
+.ondersteNav .home i,
+.ondersteNav .profiel i {
+  margin-top: 10px;
+}
+
+.ondersteNav .home p,
+.ondersteNav .profiel p {
+  font-size: 10px;
+}
+
+.zoekFunctieInput {
+  width: 100%;
+  margin-top: 30px;
+  height: 35px;
+  -webkit-box-shadow: 0px 5px 40px #3b3b3b;
+          box-shadow: 0px 5px 40px #3b3b3b;
+  border: none;
+  border-radius: 9px;
+  font-size: 20px;
+  padding: 0px 10px;
+}
+
+.zoekFunctieInput:focus {
+  outline: none;
+}
+
+.button {
+  width: 100%;
+  height: 35px;
+  text-decoration: none;
+  text-align: center;
+  color: #ffffff;
+}
+
+.ok {
+  position: absolute;
+  bottom: 5px;
+  left: 0px;
+  padding: 0px 5px;
+}
+
+.ok p {
+  height: 100%;
+  line-height: 35px;
+  background-color: #0094ff;
+  border: 2px solid #0094ff;
+  border-radius: 9px;
+}
+
+.language {
+  display: none;
+  width: 60%;
+  position: absolute;
+  z-index: 16;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate3d(-50%, -50%, 0px);
+          transform: translate3d(-50%, -50%, 0px);
+  background-color: #fff;
+  height: auto;
+  padding: 25px;
+  border-radius: 9px;
+  -webkit-box-shadow: 0px 0px 100px #000;
+          box-shadow: 0px 0px 100px #000;
+}
+
+.language article {
+  margin-top: 10px;
+  padding-top: 5px;
+}
+
+.language article p {
+  line-height: 30px;
+  display: inline-block;
+  vertical-align: top;
+}
+
+.language article .vlagFra,
+.language article .vlagNed,
+.language article .vlagEng {
+  display: inline-block;
+  margin-right: 5px;
+  margin-left: 5px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.language article .vlagFra {
+  height: 30px;
+  width: 30px;
+  background-image: url(../images/france.png);
+  border-radius: 50%;
+}
+
+.language article .vlagEng {
+  height: 30px;
+  width: 30px;
+  background-image: url(../images/uk.png);
+  border-radius: 50%;
+}
+
+.language article .vlagNed {
+  height: 30px;
+  width: 30px;
+  background-image: url(../images/netherland.png);
+  border-radius: 50%;
+}
+
+.language .actief {
+  background-color: #0094ff;
+  border-radius: 9px;
+  width: 100%;
+}
+
+.language .actief p {
+  color: #fff;
+}
+
+.language button {
+  background-color: #0094ff;
+  border-radius: 9px;
+  border: none;
+}
+
+table {
+  overflow-y: scroll;
+  max-height: 10vh;
+}
+
+form button {
+  background-color: #0094ff;
+  border-radius: 9px;
+  border: none;
+  padding: 10px;
+  color: #fff;
+}
+
+form input {
+  width: 100%;
+  margin-bottom: 30px;
+  height: 35px;
+  border: 1px solid lightgray;
+  border-radius: 9px;
+  font-size: 22px;
+  padding: 0px 10px;
+}
+
+form select {
+  width: 100%;
+  margin-bottom: 30px;
+  height: 35px;
+  border: 1px solid lightgray;
+  border-radius: 9px;
+  font-size: 22px;
+  padding: 0px 10px;
+}
+
+form p {
+  line-height: 50px;
+}
+
+#artikelDB {
+  z-index: 1;
+  height: 5vh;
+}
+
+.titel {
+  margin-top: 40px;
+  margin-bottom: 15px;
+}
+
+.w-100 {
+  width: 100%;
+}
+
+.rood {
+  background-color: red !important;
+}
+/*# sourceMappingURL=style.css.map */

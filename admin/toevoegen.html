@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="nl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>4ad - admin bestellingen</title>
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <script src="https://kit.fontawesome.com/c12d36ecaa.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+    <nav class="bovensteNav">
+        <h1>4AD artikelen admin</h1>
+        <div class="navUtilities"><a href="../zoekFunctie.html"><i class="fas fa-search"></i></a><i
+                class="fas fa-language"></i></div>
+    </nav>
+    <main>
+        <h1 class="titel">Artikel toevoegen</h1>
+        <form action="../assets/includes/artikelToevoegen.php" method="POST">
+            <h3>Naam</h3>
+            <input type="text" name="naam" required>
+
+            <h3>Prijs</h3>
+            <input type="number" name="prijs" required>
+
+            <h3>Soort</h3>
+            <select name="soort" required>
+                <option value="1">frisdrank</option>
+                <option value="2">bier</option>
+            </select>
+
+            <h3>Opties</h3>
+            <input type="text" name="opties" required>
+            <button type="submit" class="w-100" name="submit">Toevoegen</button>
+        </form>
+    </main>
+    <nav class="ondersteNav">
+        <a href="../index.html" class="home">
+            <i class="fas fa-home"></i>
+            <p>Home</p>
+
+        </a>
+        <div class="winkelKar"><i class="fas fa-shopping-cart"></i>
+            <p>Cart</p>
+        </div>
+        <div class="profiel"><i class="fas fa-user"></i>
+            <p>Profiel</p>
+        </div>
+    </nav>
+    <script src="assets/js/app.js"></script>
+</body>
+
+</html>

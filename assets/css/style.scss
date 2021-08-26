@@ -1,0 +1,300 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap");
+
+* {
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+    font-family: "Poppins";
+    text-decoration: none;
+}
+
+html {
+    max-width: 400px;
+}
+body {
+    max-height: 712px;
+}
+
+a {
+    color: #000;
+}
+.bovensteNav {
+    padding: 0px 10px;
+    height: 50px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    // background-color: blue;
+    box-shadow: 0px 0px 40px rgb(59, 59, 59);
+    border-radius: 0px 0px 5px 5px;
+    h1 {
+        font-size: 20px;
+        line-height: 50px;
+    }
+    .navUtilities {
+        width: 25%;
+        font-size: 23px;
+        height: 50px;
+        line-height: 50px;
+        vertical-align: middle;
+        .fa-search {
+            margin-right: 25px;
+        }
+        i {
+            cursor: pointer;
+        }
+    }
+}
+main {
+    margin: 2%;
+    .ADbanner {
+        background-image: url(../images/4adBanner.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        width: 100%;
+        margin-top: 2vh;
+        border-radius: 9px;
+        filter: contrast(110%);
+        height: 19vh;
+    }
+    section {
+        margin-top: 10px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 2vw;
+        article {
+            text-align: center;
+            line-height: 15vh;
+            color: #fff;
+            height: 15vh;
+            background-color: #303030;
+            border-radius: 9px;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            filter: contrast(110%);
+            font-size: 20px;
+            text-shadow: 0px 0px 20px #000;
+            text-transform: uppercase;
+        }
+        article:first-of-type {
+            background-image: url(../images/soft.jpg);
+        }
+        article:nth-of-type(2) {
+            background-image: url(../images/bierBar.jpg);
+        }
+        article:nth-of-type(3) {
+            background-image: url(../images/wine.jpg);
+        }
+        article:nth-of-type(4) {
+            background-image: url(../images/sterkeDrank.jpeg);
+        }
+        article:nth-of-type(5) {
+            background-image: url(../images/snack.jpg);
+        }
+        article:nth-of-type(6) {
+            background-image: url(../images/koffie.jpg);
+        }
+    }
+}
+.ondersteNav {
+    z-index: 20;
+    position: fixed;
+    bottom: 0px;
+    padding: 0px 10px;
+    height: 50px;
+    width: 100%;
+    max-width: 400px;
+    display: flex;
+    justify-content: space-between;
+    // background-color: blue;
+    box-shadow: 0px 5px 40px rgb(59, 59, 59);
+    border-radius: 5px 5px 0px 0px;
+    display: flex;
+    justify-content: space-between;
+    .winkelKar {
+        background-color: #0094ff;
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        color: white;
+        text-align: center;
+        margin-top: -20px;
+        font-size: 22px;
+        line-height: 10px;
+        i {
+            margin-top: 15px;
+            margin-bottom: 5px;
+        }
+        p {
+            font-size: 10px;
+        }
+    }
+    .home,
+    .profiel {
+        font-size: 20px;
+        line-height: 15px;
+        color: #303030;
+        width: 30%;
+        text-align: center;
+        i {
+            margin-top: 10px;
+        }
+        p {
+            font-size: 10px;
+        }
+    }
+}
+
+.zoekFunctieInput {
+    width: 100%;
+    margin-top: 30px;
+    height: 35px;
+    box-shadow: 0px 5px 40px rgb(59, 59, 59);
+    border: none;
+    border-radius: 9px;
+    font-size: 20px;
+    padding: 0px 10px;
+}
+.zoekFunctieInput:focus {
+    // border: 2px solid #0094ff;
+    outline: none;
+}
+.button {
+    width: 100%;
+    height: 35px;
+    text-decoration: none;
+    text-align: center;
+    color: #ffffff;
+}
+.ok {
+    position: absolute;
+    bottom: 5px;
+    left: 0px;
+    padding: 0px 5px;
+    p {
+        height: 100%;
+        line-height: 35px;
+        background-color: #0094ff;
+        border: 2px solid #0094ff;
+        border-radius: 9px;
+    }
+}
+.language {
+    display: none;
+    width: 60%;
+    position: absolute;
+    z-index: 16;
+    top: 50%;
+    left: 50%;
+    transform: translate3d(-50%, -50%, 0px);
+    background-color: #fff;
+    height: auto;
+    padding: 25px;
+    border-radius: 9px;
+    box-shadow: 0px 0px 100px #000;
+    article {
+        margin-top: 10px;
+        padding-top: 5px;
+        p {
+            line-height: 30px;
+            display: inline-block;
+            vertical-align: top;
+        }
+        .vlagFra,
+        .vlagNed,
+        .vlagEng {
+            display: inline-block;
+            margin-right: 5px;
+            margin-left: 5px;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        .vlagFra {
+            height: 30px;
+            width: 30px;
+            background-image: url(../images/france.png);
+            border-radius: 50%;
+        }
+        .vlagEng {
+            height: 30px;
+            width: 30px;
+            background-image: url(../images/uk.png);
+            border-radius: 50%;
+        }
+        .vlagNed {
+            height: 30px;
+            width: 30px;
+            background-image: url(../images/netherland.png);
+            border-radius: 50%;
+        }
+    }
+    .actief {
+        background-color: #0094ff;
+        border-radius: 9px;
+        width: 100%;
+        p {
+            color: #fff;
+        }
+    }
+    button {
+        background-color: #0094ff;
+        border-radius: 9px;
+        border: none;
+    }
+}
+
+table {
+    overflow-y: scroll;
+    max-height: 10vh;
+}
+
+form {
+    button {
+        background-color: #0094ff;
+        border-radius: 9px;
+        border: none;
+        padding: 10px;
+        color: #fff;
+    }
+    input {
+        width: 100%;
+        margin-bottom: 30px;
+        height: 35px;
+        border: 1px solid lightgray;
+        border-radius: 9px;
+        font-size: 22px;
+        padding: 0px 10px;
+    }
+    select {
+        width: 100%;
+        margin-bottom: 30px;
+        height: 35px;
+        border: 1px solid lightgray;
+        border-radius: 9px;
+        font-size: 22px;
+        padding: 0px 10px;
+    }
+    p {
+        line-height: 50px;
+    }
+}
+#artikelDB {
+    z-index: 1;
+    height: 5vh;
+    // overflow-y: scroll;
+}
+//basis principes
+
+.titel {
+    margin-top: 40px;
+    margin-bottom: 15px;
+}
+.w-100 {
+    width: 100%;
+}
+.rood {
+    background-color: red !important;
+}
